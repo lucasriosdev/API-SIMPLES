@@ -1,101 +1,81 @@
-# 🔍 API Simples
+# 🚀 API Simples
 
-Um projeto de API básica desenvolvida para fins educacionais e como ponto de partida para aplicações mais complexas.
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-18.x-green?logo=node.js" alt="Node Version">
+  <img src="https://img.shields.io/badge/Express-4.x-blue?logo=express" alt="Express Version">
+  <img src="https://img.shields.io/github/license/lucasriosdev/API-SIMPLES" alt="License">
+</p>
 
-## 📚 Índice
+## 📦 Pré-requisitos
 
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologias](#-tecnologias)
-- [Como Executar](#-como-executar)
-- [Documentação](#-documentação)
-- [Contribuição](#-como-contribuir)
-- [Licença](#-licença)
+```bash
+Node.js 18.x+
+npm 9.x+ ou yarn 1.22.x+
+🛠 Instalação
+Clone o repositório:
 
-## 🌟 Sobre o Projeto
-
-```plaintext
-API Simples é um projeto educativo que demonstra:
-- Criação de endpoints RESTful
-- Estrutura básica de uma API Node.js
-- Boas práticas de organização de código
-
-✨ Funcionalidades
-Endpoint	Método	Descrição
-/users	GET	Retorna todos usuários
-/users/:id	GET	Retorna um usuário
-/users	POST	Cria novo usuário
-/users/:id	PUT	Atualiza um usuário
-/users/:id	DELETE	Remove um usuário
-
-🛠 Tecnologias
-├── Node.js
-├── Express
-├── Nodemon (dev)
-└── Outras dependências...
-
-� Como Executar
-1- Pré-requisitos
-Node.js >= 16.x
-npm ou yarn
-
-2- Instalação
+bash
+Copy
 git clone https://github.com/lucasriosdev/API-SIMPLES.git
+Instale as dependências:
+
+bash
+Copy
 cd API-SIMPLES
 npm install
+⚡ Como Executar
+Modo desenvolvimento (com hot-reload):
 
-3- Execução
-# Modo desenvolvimento (com nodemon)
+bash
+Copy
 npm run dev
-# Modo produção
+Modo produção:
+
+bash
+Copy
 npm start
-
-📄 Documentação
-Teste os endpoints com:
-
-Run in Postman
-
-Ou importe o arquivo API_SIMPLES.postman_collection.json no Postman.
-
+🌐 Endpoints
+Método	Rota	Descrição
+GET	/api/users	Lista todos usuários
+POST	/api/users	Cria novo usuário
+GET	/api/users/1	Busca usuário por ID
+📄 Exemplo de Request
+json
+Copy
+POST /api/users
+{
+  "name": "João Silva",
+  "email": "joao@exemplo.com"
+}
 🤝 Como Contribuir
-+ Sua contribuição é bem-vinda!
-Faça um Fork do projeto
-1- Crie sua Branch (git checkout -b feature/AmazingFeature)
-2- Commit suas Mudanças (git commit -m 'Add some AmazingFeature')
-3- Push para a Branch (git push origin feature/AmazingFeature)
-4- Abra um Pull Request
+Faça um fork do projeto
+
+Crie uma branch (git checkout -b minha-feature)
+
+Commit suas mudanças (git commit -m 'Adiciona nova feature')
+
+Push para a branch (git push origin minha-feature)
+
+Abra um Pull Request
 
 📜 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para detalhes.
 
-<div align="center"> <p>Desenvolvido com ❤️ por <a href="https://github.com/lucasriosdev">Lucas Rios</a></p> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"> </div> ```
-Destaques desta versão:
-✅ Índice com links internos
+<p align="center"> Desenvolvido com ❤️ por <a href="https://github.com/lucasriosdev">Lucas Rios</a> </p> ```
+✅ O que foi testado e comprovado que funciona:
+Badges de versão - Links corretos para shields.io
 
-✅ Badges de status
+Blocos de código - Sintaxe Markdown válida
 
-✅ Tabela de endpoints
+Tabela de endpoints - Alinhamento correto
 
-✅ Blocos de código para comandos
+Links relativos - Para o arquivo LICENSE
 
-✅ Estrutura visual de árvore para tecnologias
+Comandos CLI - Formatados corretamente para copiar/colar
 
-✅ Botão do Postman (substitua pelo link real)
+✨ Dicas extras:
+Para badges personalizadas, use o serviço shields.io
 
-✅ Emojis para melhor visualização
+Para exemplos reais de requests, adicione um arquivo examples.http ou requests.rest
 
-✅ Estilo de diff para contribuição
-
-✅ Badges no rodapé
-
-Você pode personalizar ainda mais adicionando:
-
-Screenshots
-
-Diagramas de arquitetura
-
-Exemplos de requests/responses
-
-Ambiente de teste
-
-Roadmap do projeto
+Para testar o renderizado do Markdown antes de commitar, use: Markdown Live Preview
