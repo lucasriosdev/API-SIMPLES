@@ -1,81 +1,94 @@
-# 🚀 API Simples
+## 🚀 API Simples
+Um projeto de API básica desenvolvida para fins educacionais e como ponto de partida para aplicações mais complexas.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-18.x-green?logo=node.js" alt="Node Version">
   <img src="https://img.shields.io/badge/Express-4.x-blue?logo=express" alt="Express Version">
-  <img src="https://img.shields.io/github/license/lucasriosdev/API-SIMPLES" alt="License">
 </p>
 
-## 📦 Pré-requisitos
+## 📌 Pré-requisitos
 
 ```bash
-Node.js 18.x+
-npm 9.x+ ou yarn 1.22.x+
-🛠 Instalação
-Clone o repositório:
+# Versões compativeis
+Node.js >= 18.0.0
+npm >= 9.0.0
+```
 
-bash
-Copy
-git clone https://github.com/lucasriosdev/API-SIMPLES.git
-Instale as dependências:
+## 🛠 Instalação Rápida
 
-bash
-Copy
-cd API-SIMPLES
+```bash
+# Clone o projeto
+git clone https://github.com/lucasriosdev/API-SIMPLES.git && cd API-SIMPLES
+
+# Instale as dependências
 npm install
-⚡ Como Executar
-Modo desenvolvimento (com hot-reload):
 
-bash
-Copy
+# Inicie em modo desenvolvimento
 npm run dev
-Modo produção:
+```
 
-bash
-Copy
-npm start
-🌐 Endpoints
-Método	Rota	Descrição
-GET	/api/users	Lista todos usuários
-POST	/api/users	Cria novo usuário
-GET	/api/users/1	Busca usuário por ID
-📄 Exemplo de Request
-json
-Copy
-POST /api/users
+## 🌐 Rotas da API
+
+| Método | Endpoint       | Body Example                  | Descrição           |
+|--------|----------------|-------------------------------|---------------------|
+| `GET`  | `/api/users`   | -                             | Lista todos usuários|
+| `POST` | `/api/users`   | `{"name":"João","email":"joao@ex.com"}` | Cria novo usuário |
+
+## 📦 Estrutura do Projeto
+
+```plaintext
+.
+├── src/
+│   ├── controllers/   # Lógica dos endpoints
+│   ├── routes/        # Definição de rotas
+│   └── app.js         # Configuração principal
+├── .env.example       # Variáveis de ambiente
+├── package.json       # Dependências
+└── README.md          # Documentação
+```
+
+## 🧪 Testando a API
+
+```http
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
 {
-  "name": "João Silva",
-  "email": "joao@exemplo.com"
+  "name": "Maria Silva",
+  "email": "maria@exemplo.com"
 }
-🤝 Como Contribuir
-Faça um fork do projeto
+```
 
-Crie uma branch (git checkout -b minha-feature)
+**Resposta esperada:**
+```json
+{
+  "id": 1,
+  "name": "Maria Silva",
+  "email": "maria@exemplo.com",
+  "createdAt": "2023-08-20T12:00:00.000Z"
+}
+```
 
-Commit suas mudanças (git commit -m 'Adiciona nova feature')
+## 🚨 Troubleshooting
 
-Push para a branch (git push origin minha-feature)
+```bash
+# Erro: Porta em uso
+lsof -i :3000
+kill -9 <PID>
 
-Abra um Pull Request
+# Erro: Dependências faltando
+rm -rf node_modules && npm install
+```
 
-📜 Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para detalhes.
+## 📜 Licença
 
-<p align="center"> Desenvolvido com ❤️ por <a href="https://github.com/lucasriosdev">Lucas Rios</a> </p> ```
-✅ O que foi testado e comprovado que funciona:
-Badges de versão - Links corretos para shields.io
+```text
+MIT License © 2023 - Lucas Rios
+```
 
-Blocos de código - Sintaxe Markdown válida
+---
 
-Tabela de endpoints - Alinhamento correto
-
-Links relativos - Para o arquivo LICENSE
-
-Comandos CLI - Formatados corretamente para copiar/colar
-
-✨ Dicas extras:
-Para badges personalizadas, use o serviço shields.io
-
-Para exemplos reais de requests, adicione um arquivo examples.http ou requests.rest
-
-Para testar o renderizado do Markdown antes de commitar, use: Markdown Live Preview
+<div align="center">
+  <sub>Criado com</sub> 💻 <sub>por</sub> <a href="https://github.com/lucasriosdev">Lucas Rios</a>
+</div>
+```
