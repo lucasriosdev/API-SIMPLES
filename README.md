@@ -32,7 +32,7 @@ npm run dev
 | Método | Endpoint       | Body Example                  | Descrição           |
 |--------|----------------|-------------------------------|---------------------|
 | `GET`  | `/api/users`   | -                             | Lista todos usuários|
-| `POST` | `/api/users`   | `{"name":"João","email":"joao@ex.com"}` | Cria novo usuário |
+| `POST` | `/api/users`   | `{"name":"Lucas","age":"24", "email":"lucas@gmail.com.com"}` | Cria novo usuário |
 
 ## 📦 Estrutura do Projeto
 
